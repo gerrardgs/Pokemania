@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemania</title>
+
+    <!-- Google Font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Poppins:thin,extra-light,light,100,200,300,400,500,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- icon favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-32x32.png"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="assets/css/style-pokemon.css" />
+    <style>
+      /* Loader Animation */
+      .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #fff;
+        border-bottom-color: #ff3d00;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      .loader-hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .container-pokemon {
+        min-height: 100vh;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="nav-container">
+      <header>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div class="logo">
+          <img src="assets/img/logo-web.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" id="home-link">Home</a>
+            </li>
+            <li>
+              <a href="pokemon.html" id="pokemon-link" class="active"
+                >Pokemon</a
+              >
+            </li>
+            <li><a href="items.html" id="item-link">Item</a></li>
+            <li><a href="forum.html" id="forum-link">Forum</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="searchBar">
+      <input
+        id="pokemon-search"
+        type="text"
+        name="pokemon-search"
+        placeholder="Masukkan nama Pokémon (Contoh: pikachu)"
+        value=""
+      />
+      <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <!-- Loader -->
+    <span class="loader" id="loader"></span>
+
+    <!-- Konten -->
+    <div class="container-pokemon" id="pokemon-list"></div>
+
+    <!-- Button -->
+    <div class="button">
+      <button id="previous-button">&laquo; Prev</button>
+      <button id="next-button">Next &raquo;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer-menu">
+        <div class="footer-copyright">
+          <div>
+            <small>&copy; Copyright 2024</small>
+          </div>
+          <div>
+            <a href="">|</a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-github fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/javascript/pokemon.js" defer></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".nav-container");
+        if (window.scrollY > 50) {
+          header.classList.add("translucent");
+        } else {
+          header.classList.remove("translucent");
+        }
+      });
+    </script>
+  </body>
+</html>
