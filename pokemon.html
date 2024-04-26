@@ -58,6 +58,12 @@
           transform: rotate(360deg);
         }
       }
+      #pokemon-not-found {
+        color: red;
+        font-size: 38px;
+        margin-top: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -95,6 +101,7 @@
         placeholder="Masukkan nama Pokémon (Contoh: pikachu)"
         value=""
       />
+      <span id="#filter-count"></span>
       <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
@@ -104,13 +111,14 @@
     <span class="loader" id="loader"></span>
 
     <!-- Konten -->
+    <div id="pokemon-not-found" style="display: none"></div>
     <div class="container-pokemon" id="pokemon-list"></div>
 
     <!-- Button -->
-    <div class="button">
+    <!-- <div class="button">
       <button id="previous-button">&laquo; Prev</button>
       <button id="next-button">Next &raquo;</button>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="footer-container">
@@ -128,8 +136,9 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript/pokemon.js" defer></script>
-    <script>
+    <!-- <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector(".nav-container");
         if (window.scrollY > 50) {
@@ -138,6 +147,6 @@
           header.classList.remove("translucent");
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>

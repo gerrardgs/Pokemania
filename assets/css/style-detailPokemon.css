@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #fff9e6;
+}
+.container {
+  margin-top: 20px;
+}
+
+.container-top {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.container-top .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, #ffe082 0%, #fff9e6 100%);
+  border: 1px solid #ffcc80;
+  height: 400px;
+}
+
+.container-top .card .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: #e67e22;
+  color: #000000;
+  font-size: 18px;
+}
+
+.container-top .card img {
+  width: 250px;
+}
+
+.container-top .card h3 {
+  margin: 20px;
+}
+
+.container-top .card .tipe-data span {
+  padding: 5px 12px;
+  margin: 0 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px black;
+}
+.container-top .card .tipe-data .normal {
+  background-color: #9fa19f;
+}
+.container .card .tipe-data .fire {
+  background-color: #e62829;
+}
+.container .card .tipe-data .fighting {
+  background-color: #ff8000;
+}
+.container .card .tipe-data .water {
+  background-color: #2980ef;
+}
+.container .card .tipe-data .flying {
+  background-color: #81b9ef;
+}
+.container .card .tipe-data .grass {
+  background-color: #3fa129;
+}
+.container .card .tipe-data .poison {
+  background-color: #9141cb;
+}
+.container .card .tipe-data .electric {
+  background-color: #fac000;
+}
+.container .card .tipe-data .ground {
+  background-color: #915121;
+}
+.container .card .tipe-data .psychic {
+  background-color: #ef4179;
+}
+.container .card .tipe-data .rock {
+  background-color: #afa981;
+}
+.container .card .tipe-data .ice {
+  background-color: #3dcef3;
+}
+.container .card .tipe-data .bug {
+  background-color: #91a119;
+}
+.container .card .tipe-data .dragon {
+  background-color: #5060e1;
+}
+.container .card .tipe-data .ghost {
+  background-color: #704170;
+}
+.container .card .tipe-data .dark {
+  background-color: #624d4e;
+}
+.container .card .tipe-data .steel {
+  background-color: #60a1b8;
+}
+.container .card .tipe-data .fairy {
+  background-color: #ef70ef;
+}
+.container .card .tipe-data .stellar {
+  background-color: #44628d;
+}
+.container-top .stats {
+  height: 100%;
+}
+.container-top .description {
+  height: 100%;
+  width: 100%;
+}
+.container-top .description td {
+  border: 2px solid #ffcc80;
+  padding: 5px;
+  text-align: center;
+}
+
+/* style.css */
+@keyframes expand {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.container-top .anak {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 40px;
+}
+
+.progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: red;
+  animation: expand 1s forwards;
+  transform-origin: left;
+}
+
+.container-top .ability {
+  display: flex;
+  width: 80%;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 300px; */
+}
+
+.container-top .ability h3 {
+  width: fit-content;
+}
+
+.container .container-bottom .moves.container {
+  display: flex;
+  align-items: center;
+}
+
+.container-bottom .moves.container a {
+  padding: 20px;
+  margin: 20px;
+}
