@@ -1,22 +1,26 @@
-// EVENT LISTENER UNTUK SETIAP MENU
+// Event listener untuk setiap menu
 document.getElementById('home-link').addEventListener('click', function (event) {
   event.preventDefault();
   setActiveMenu('home-link');
+  window.location.href = 'index.html'; // Navigasi ke halaman beranda
 });
 
 document.getElementById('pokemon-link').addEventListener('click', function (event) {
   event.preventDefault();
   setActiveMenu('pokemon-link');
+  window.location.href = 'pokemon.html'; // Navigasi ke halaman pokemon.html
 });
 
 document.getElementById('item-link').addEventListener('click', function (event) {
   event.preventDefault();
   setActiveMenu('item-link');
+  window.location.href = 'item.html'; // Navigasi ke halaman item.html
 });
 
-document.getElementById('forum-link').addEventListener('click', function (event) {
+document.getElementById('contact-link').addEventListener('click', function (event) {
   event.preventDefault();
-  setActiveMenu('forum-link');
+  setActiveMenu('contact-link');
+  window.location.href = 'contact.html'; // Navigasi ke halaman contact.html
 });
 
 
@@ -40,27 +44,26 @@ startJourneyButton.addEventListener('click', function (event) {
 });
 
 
-// Fungsi untuk mengatur menu yang aktif
-function setActiveMenu(linkId) {
-  var menuLinks = document.querySelectorAll('.nav-container li a');
-  menuLinks.forEach(function (link) {
-    link.classList.remove('active');
+// Fungsi untuk menetapkan kelas aktif pada menu yang dipilih
+function setActiveMenu(menuId) {
+  var menus = document.querySelectorAll('.nav-container nav ul li a');
+  menus.forEach(function (menu) {
+    menu.classList.remove('active');
   });
 
-  var activeLink = document.getElementById(linkId);
-  activeLink.classList.add('active');
+  var activeMenu = document.getElementById(menuId);
+  activeMenu.classList.add('active');
 }
+
 
 // Panggil fungsi ini saat halaman dimuat
 window.addEventListener('load', function () {
-  // Sematkan kode berikut untuk menyembunyikan semua gambar kecuali gambar pertama saat halaman dimuat.
   images.forEach(function (image, index) {
     if (index !== 0) {
       image.style.display = 'none';
     }
   });
 
-  // Panggil fungsi ini saat halaman dimuat
   if (window.location.pathname === '/home.html') {
     setActiveMenu('home-link');
   }
