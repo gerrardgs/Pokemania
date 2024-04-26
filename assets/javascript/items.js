@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const itemsData = document.getElementById("items-list");
 const itemsSearch = document.getElementById("items-search");
 const previousButton = document.getElementById("previous-button");
@@ -71,6 +72,8 @@ window.addEventListener("load", () => {
 });
 fetchItems(`https://pokeapi.co/api/v2/item?limit=24`);
 =======
+=======
+>>>>>>> ferry
 // const itemsSearch = document.getElementById("items-search").value;
 // const previousButton = document.getElementById("previous-button");
 // const nextButton = document.getElementById("next-button");
@@ -255,4 +258,7 @@ $(document).ready(function () {
 // fetchitems(`https://pokeapi.co/api/v2/items?limit=50`);
 // fetchitems(`https://pokeapi.co/api/v2/item?limit=100000`);
 fetchitems(`https://pokeapi.co/api/v2/item?limit=1000&offset=0`);
+<<<<<<< HEAD
+>>>>>>> ferry
+=======
 >>>>>>> ferry
