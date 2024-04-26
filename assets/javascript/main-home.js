@@ -14,7 +14,7 @@ document.getElementById('pokemon-link').addEventListener('click', function (even
 document.getElementById('item-link').addEventListener('click', function (event) {
   event.preventDefault();
   setActiveMenu('item-link');
-  window.location.href = 'item.html'; // Navigasi ke halaman item.html
+  window.location.href = 'items.html'; // Navigasi ke halaman item.html
 });
 
 document.getElementById('contact-link').addEventListener('click', function (event) {
