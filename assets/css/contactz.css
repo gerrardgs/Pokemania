@@ -464,6 +464,28 @@ textarea.input {
 }
 }
 
+/* FOOTER */
+.footer-container {
+    padding: 0;
+}
+
+.footer-menu {
+    margin: 0;
+}
+
+.footer-menu section {
+    width: 48% !important;
+}
+
+.footer-copyright div {
+    margin: 20px 0 20px 10px;
+}
+
+.footer-copyright div a.line {
+    margin: 0;
+}
+  /* END OF FOOTER */
+
 @media (max-width: 480px) {
 .container {
     padding: 1.5rem;
@@ -511,6 +533,18 @@ form,
     padding: 0.45rem 1.2rem;
     }
 }
+
+/* FOOTER */
+.footer-menu section {
+    width: 100% !important;
+    margin-bottom: 2rem;
+}
+
+.footer-copyright small,
+.footer-copyright a {
+    font-size: 12px;
+}
+  /* END OF FOOTER */
 
 .credit{
     text-align: center;
