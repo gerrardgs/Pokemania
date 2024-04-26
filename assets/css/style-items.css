@@ -22,7 +22,10 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+<<<<<<< HEAD
   background-color: #fff9e6;
+=======
+>>>>>>> ferry
 }
 
 h1 {
@@ -103,7 +106,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
   margin: 0 60px 50px 60px;
+=======
+  margin: 0 auto 50px auto;
+>>>>>>> ferry
 }
 .container-items a {
   text-decoration: none;
@@ -126,6 +133,7 @@ h1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   scale: 1.1;
 }
+<<<<<<< HEAD
 .container-items .card h5 {
   color: #707070;
 }
@@ -136,6 +144,114 @@ h1 {
   text-align: center;
   padding: 6px 16px;
 }
+=======
+.container-items .card h4 {
+  color: #000000;
+}
+.container-items .card h4::first-letter {
+  text-transform: uppercase;
+}
+.container-items img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+.container-items .container {
+  display: flex;
+  width: 230px;
+  height: 150px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 16px;
+  line-height: 32px;
+}
+
+.container-items .card .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: #e67e22;
+  color: #000000;
+  font-size: 12px;
+}
+
+.container-items .container .type-data span {
+  padding: 5px 12px;
+  margin: 0 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px black;
+}
+.container-items .container .type-data .normal {
+  background-color: #9fa19f;
+}
+.container-items .container .type-data .fire {
+  background-color: #e62829;
+}
+.container-items .container .type-data .fighting {
+  background-color: #ff8000;
+}
+.container-items .container .type-data .water {
+  background-color: #2980ef;
+}
+.container-items .container .type-data .flying {
+  background-color: #81b9ef;
+}
+.container-items .container .type-data .grass {
+  background-color: #3fa129;
+}
+.container-items .container .type-data .poison {
+  background-color: #9141cb;
+}
+.container-items .container .type-data .electric {
+  background-color: #fac000;
+}
+.container-items .container .type-data .ground {
+  background-color: #915121;
+}
+.container-items .container .type-data .psychic {
+  background-color: #ef4179;
+}
+.container-items .container .type-data .rock {
+  background-color: #afa981;
+}
+.container-items .container .type-data .ice {
+  background-color: #3dcef3;
+}
+.container-items .container .type-data .bug {
+  background-color: #91a119;
+}
+.container-items .container .type-data .dragon {
+  background-color: #5060e1;
+}
+.container-items .container .type-data .ghost {
+  background-color: #704170;
+}
+.container-items .container .type-data .dark {
+  background-color: #624d4e;
+}
+.container-items .container .type-data .steel {
+  background-color: #60a1b8;
+}
+.container-items .container .type-data .fairy {
+  background-color: #ef70ef;
+}
+.container-items .container .type-data .stellar {
+  background-color: #44628d;
+}
+
+>>>>>>> ferry
 /* END OF CONTENT */
 
 /* Search Bar */
