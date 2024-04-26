@@ -2,16 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-color: #fff9e6;
+  background-color: #efefef;
 }
+
 .container {
-  margin-top: 20px;
+  margin: 50px;
+  padding: 0.5rem;
+  background-color: #fff9e6;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .container-top {
@@ -60,70 +65,92 @@ body {
   color: #ffffff;
   text-shadow: 2px 2px 4px black;
 }
+
 .container-top .card .tipe-data .normal {
   background-color: #9fa19f;
 }
+
 .container .card .tipe-data .fire {
   background-color: #e62829;
 }
+
 .container .card .tipe-data .fighting {
   background-color: #ff8000;
 }
+
 .container .card .tipe-data .water {
   background-color: #2980ef;
 }
+
 .container .card .tipe-data .flying {
   background-color: #81b9ef;
 }
+
 .container .card .tipe-data .grass {
   background-color: #3fa129;
 }
+
 .container .card .tipe-data .poison {
   background-color: #9141cb;
 }
+
 .container .card .tipe-data .electric {
   background-color: #fac000;
 }
+
 .container .card .tipe-data .ground {
   background-color: #915121;
 }
+
 .container .card .tipe-data .psychic {
   background-color: #ef4179;
 }
+
 .container .card .tipe-data .rock {
   background-color: #afa981;
 }
+
 .container .card .tipe-data .ice {
   background-color: #3dcef3;
 }
+
 .container .card .tipe-data .bug {
   background-color: #91a119;
 }
+
 .container .card .tipe-data .dragon {
   background-color: #5060e1;
 }
+
 .container .card .tipe-data .ghost {
   background-color: #704170;
 }
+
 .container .card .tipe-data .dark {
   background-color: #624d4e;
 }
+
 .container .card .tipe-data .steel {
   background-color: #60a1b8;
 }
+
 .container .card .tipe-data .fairy {
   background-color: #ef70ef;
 }
+
 .container .card .tipe-data .stellar {
   background-color: #44628d;
 }
+
 .container-top .stats {
   height: 100%;
 }
+
 .container-top .description {
   height: 100%;
   width: 100%;
 }
+
 .container-top .description td {
   border: 2px solid #ffcc80;
   padding: 5px;
@@ -135,6 +162,7 @@ body {
   0% {
     transform: scaleX(0);
   }
+
   100% {
     transform: scaleX(1);
   }
@@ -186,7 +214,119 @@ body {
   align-items: center;
 }
 
+.container-bottom {
+  padding: 20px;
+}
+
+.container-bottom h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .container-bottom .moves.container a {
   padding: 20px;
   margin: 20px;
+}
+
+.container .back-button {
+  background-color: #e67e22;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.399);
+}
+
+.container .back-button:hover {
+  background-color: #d35400;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-top {
+    flex-direction: column;
+  }
+
+  .container-top .anak .stats .container-stats {
+    width: 100%;
+  }
+
+  .container-top .anak {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-top .anak .description {
+    margin-top: 1rem;
+  }
+
+  .container-top .ability {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .container-bottom {
+    padding-top: 0;
+  }
+
+  .container-bottom h2 {
+    text-align: left;
+  }
+
+  .container-bottom h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .container {
+    margin: 15px;
+  }
+
+  .container-top .ability .ability-info {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  span,
+  td {
+    font-size: 12px;
+  }
+
+  .container .back-button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .container-top .anak .description .table-data tr td audio {
+    width: 220px;
+    height: 50px;
+  }
+
+  .container-bottom h3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container-top .anak .description .table-data tr td audio {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .container-top .anak .description .table-data tr td audio {
+    width: 100px;
+    height: 30px;
+  }
 }
